@@ -4,5 +4,5 @@
 
 前端框架: Next.js / React
 樣式設計: SCSS Modules 模組化樣式
-資料庫: Supabase（商品／文章假資料）
+資料庫: Supabase
 版本控制: Git/GitHub
