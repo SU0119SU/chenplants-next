@@ -1,0 +1,76 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease;
+}
+
+/* 首頁用：透明背景 */
+.transparent {
+  background-color: transparent;
+}
+
+/* 其他頁用：黑底背景 */
+.colored {
+  background-color: #111;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoLink {
+  display: inline-block;
+
+  &:hover .logo {
+    transform: scale(1.05);
+    opacity: 0.85;
+    transition: all 0.2s ease;
+  }
+}
+
+.logo {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}

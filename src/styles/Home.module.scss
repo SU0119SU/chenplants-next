@@ -1,0 +1,19 @@
+.page {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1;
+  padding: 2rem 1rem 4rem;
+}
+
+.section {
+  margin-bottom: 5rem;
+}

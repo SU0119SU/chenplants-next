@@ -1,0 +1,57 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  margin-top: -90px;
+  padding-top: 160px;
+  background: url('/images/img1.jpg') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); // 黑色遮罩提升文字可讀性
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #4caf50;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #66bb6a;
+    transform: scale(1.05);
+  }
+}

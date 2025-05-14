@@ -1,0 +1,23 @@
+.wrapper {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  .sectionTitle {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .wrapper a {
+    padding-top: 80px;
+    color: #4a7c59;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  
+  
