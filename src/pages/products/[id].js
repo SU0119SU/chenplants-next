@@ -4,6 +4,8 @@ import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import { supabase } from '../../lib/supabase'
 import styles from '@/styles/ProductDetail.module.scss'
+import Link from 'next/link';
+
 
 export default function ProductDetailPage() {
   const router = useRouter()
@@ -42,7 +44,7 @@ export default function ProductDetailPage() {
         ) : !product ? (
           <>
             <h1>找不到這個商品 😢</h1>
-            <p><a href="/products">← 返回商品列表</a></p>
+            <p><Link href="/products">← 返回商品列表</Link></p>
           </>
         ) : (
           <div className={styles.detailContainer}>
